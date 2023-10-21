@@ -1,0 +1,5 @@
+Sitemap: https://bank.ynwk.org/sitemap.xml
+
+User-agent: *
+Disallow: /template/*
+Disallow: /template

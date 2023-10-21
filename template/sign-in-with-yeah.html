@@ -1,0 +1,80 @@
+<style>
+.siwy-dark-btn {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: none;
+  background-color: #0C0E14;
+  background-image: none;
+  border: 1px solid #747775;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-family: 'Arial black', arial, sans-serif;
+  font-size: 14px;
+  height: 40px;
+  letter-spacing: 0.25px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 12px;
+  position: relative;
+  text-align: center;
+  -webkit-transition: background-color .218s, border-color .218s, box-shadow .218s;
+  transition: background-color .218s, border-color .218s, box-shadow .218s;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+  max-width: 400px;
+  min-width: min-content;
+  border-color:#ff4747;
+  border-width:1px
+}
+
+.siwy-dark-btn .siwy-dark-btn-icon {
+  height: 20px;
+  margin-right: 12px;
+  min-width: 20px;
+  width: 20px;
+}
+
+.siwy-dark-btn .siwy-dark-btn-content-wrapper {
+  -webkit-align-items: center;
+  align-items: center;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.siwy-dark-btn .siwy-dark-btn-contents {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+
+
+
+
+</style>
+<button class="siwy-dark-btn">
+  <div class="siwy-dark-btn-state"></div>
+  <div class="siwy-dark-btn-content-wrapper">
+    <div class="siwy-dark-btn-icon">
+      <img src="https://cdn.ynwk.org/img/branding/logos/default/logo.svg">
+    </div>
+    <span class="siwy-dark-btn-contents">Sign in with yEAh</span>
+    <span style="display: none;">Sign in with yEAh</span>
+  </div>
+</button>
