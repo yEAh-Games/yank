@@ -178,13 +178,12 @@
                         <div style="background-color:#1D1F24" class="basic-loan-calculator wow fadeInLeft" data-wow-delay="0.1s">
                             <img class="shape" src="/img/home-4/shape-1.png" alt="">
                             <h4><a style="text-decoration:none" href="/transfer">Quick transfer</a></h4>
-                            <form action="#" class="d-flex flex-column">
                                 
                                 <div class="mb-3">
                                     <label class="label" for="loan-amount">Amount in Yollars </label>
                                     <div class="input-field">
                                         <span><img src="https://cdn.ynwk.org/img/general/symbols/yollar.svg" style="width:1rem"></span>
-                                        <input style="color:black" type="number" id="loan-amount" placeholder="Enter amount"
+                                        <input style="color:black" type="number" id="qt-amount" placeholder="Enter amount"
                                             class="form-control">
                                     </div>
                                 </div>
@@ -192,13 +191,12 @@
                                     <label class="label" for="loan-time">Recipient</label>
                                     <div class="input-field">
                                         <span>@</span>
-                                        <input type="text" id="loan-time" placeholder="username" style="color:black"
+                                        <input type="text" id="qt-username" placeholder="username" style="color:black"
                                             class="form-control">
                                     </div>
                                 </div>
                               <br>
-                                <button style=background-color:#ff4747 type="submit" class="theme-btn w-100">Confirm transfer</button>
-                            </form>
+                                <button style=background-color:#ff4747 id="qt-confirm" class="theme-btn w-100">Confirm transfer</button>
                         </div>
                     </div>
                 </div>
@@ -806,6 +804,17 @@
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+
+    <script>
+        document.getElementById("qt-confirm").addEventListener("click", function () {
+          var username = document.getElementById("qt-username").value;
+          var amount = document.getElementById("qt-amount").value;
+    
+          var redirectURL = "https://transaction.ynwk.org?to=" + encodeURIComponent(username) + "&amount=" + encodeURIComponent(amount);
+    
+          window.location.href = redirectURL;
+        });
+      </script>
 </body>
 
 
